@@ -6,269 +6,157 @@ import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolData
 import {ICollector} from './common/ICollector.sol';
 
 library AaveV3Sepolia {
-  // https://sepolia.etherscan.io/address/0x012bAC54348C0E635dCAc9D5FB99f06F24136C9A
+  // https://sepolia.etherscan.io/address/0x7EEb8582fE8f8B0982f02619A04F344893df48c0
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
-    IPoolAddressesProvider(0x012bAC54348C0E635dCAc9D5FB99f06F24136C9A);
+    IPoolAddressesProvider(0x7EEb8582fE8f8B0982f02619A04F344893df48c0);
 
-  // https://sepolia.etherscan.io/address/0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951
-  IPool internal constant POOL = IPool(0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951);
+  // https://sepolia.etherscan.io/address/0x545a706a898E4a4a3Cf90AA69D231151C38603bc
+  IPool internal constant POOL = IPool(0x545a706a898E4a4a3Cf90AA69D231151C38603bc);
 
-  // https://sepolia.etherscan.io/address/0x7Ee60D184C24Ef7AfC1Ec7Be59A0f448A0abd138
+  // https://sepolia.etherscan.io/address/0xC727DD0FA5F9f35e27a99fb056cBbA21B57c7D06
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
-    IPoolConfigurator(0x7Ee60D184C24Ef7AfC1Ec7Be59A0f448A0abd138);
+    IPoolConfigurator(0xC727DD0FA5F9f35e27a99fb056cBbA21B57c7D06);
 
-  // https://sepolia.etherscan.io/address/0x2da88497588bf89281816106C7259e31AF45a663
-  IAaveOracle internal constant ORACLE = IAaveOracle(0x2da88497588bf89281816106C7259e31AF45a663);
+  // https://sepolia.etherscan.io/address/0xF2f6A516C211d0310f5D58b16599e5E05347dCdC
+  IAaveOracle internal constant ORACLE = IAaveOracle(0xF2f6A516C211d0310f5D58b16599e5E05347dCdC);
 
   // https://sepolia.etherscan.io/address/0x0000000000000000000000000000000000000000
   address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
 
-  // https://sepolia.etherscan.io/address/0x3e9708d80f7B3e43118013075F7e95CE3AB31F31
+  // https://sepolia.etherscan.io/address/0x17100C740957d7B40E9AF5ecbA5716D6cF92A9eb
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x3e9708d80f7B3e43118013075F7e95CE3AB31F31);
+    IPoolDataProvider(0x17100C740957d7B40E9AF5ecbA5716D6cF92A9eb);
 
-  // https://sepolia.etherscan.io/address/0x7F2bE3b178deeFF716CD6Ff03Ef79A1dFf360ddD
+  // https://sepolia.etherscan.io/address/0x586F324807b147f7f43d21111ed607587aa4B59f
   IACLManager internal constant ACL_MANAGER =
-    IACLManager(0x7F2bE3b178deeFF716CD6Ff03Ef79A1dFf360ddD);
+    IACLManager(0x586F324807b147f7f43d21111ed607587aa4B59f);
 
-  // https://sepolia.etherscan.io/address/0xfA0e305E0f46AB04f00ae6b5f4560d61a2183E00
-  address internal constant ACL_ADMIN = 0xfA0e305E0f46AB04f00ae6b5f4560d61a2183E00;
+  // https://sepolia.etherscan.io/address/0xcbeD65Db7E177D4875dDF5B67E13326A43a7B03f
+  address internal constant ACL_ADMIN = 0xcbeD65Db7E177D4875dDF5B67E13326A43a7B03f;
 
-  // https://sepolia.etherscan.io/address/0x604264f8017fEF3b11B3dD63537CB501560380B5
-  ICollector internal constant COLLECTOR = ICollector(0x604264f8017fEF3b11B3dD63537CB501560380B5);
+  // https://sepolia.etherscan.io/address/0x22d4512557aa5a2F88AC9d505867218dB17a620A
+  ICollector internal constant COLLECTOR = ICollector(0x22d4512557aa5a2F88AC9d505867218dB17a620A);
 
-  // https://sepolia.etherscan.io/address/0x4DA5c4da71C5a167171cC839487536d86e083483
+  // https://sepolia.etherscan.io/address/0x59554D7c5693425cE9a1fB7d4fe1B7FAC4a66074
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
-    0x4DA5c4da71C5a167171cC839487536d86e083483;
+    0x59554D7c5693425cE9a1fB7d4fe1B7FAC4a66074;
 
-  // https://sepolia.etherscan.io/address/0x48424f2779be0f03cDF6F02E17A591A9BF7AF89f
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x48424f2779be0f03cDF6F02E17A591A9BF7AF89f;
+  // https://sepolia.etherscan.io/address/0x777885b1f73f38990b43a766Dd0aAdd30C7D41F8
+  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x777885b1f73f38990b43a766Dd0aAdd30C7D41F8;
 
-  // https://sepolia.etherscan.io/address/0x54bdE009156053108E73E2401aEA755e38f92098
+  // https://sepolia.etherscan.io/address/0x4beCf11dB5a9dE303E0D3961855fB4a50b9FF55B
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x54bdE009156053108E73E2401aEA755e38f92098;
+    0x4beCf11dB5a9dE303E0D3961855fB4a50b9FF55B;
 
-  // https://sepolia.etherscan.io/address/0xd1CF2FBf4fb82045eE0B116eB107d29246E8DCe9
+  // https://sepolia.etherscan.io/address/0xa9a993275F308478f6C89438C23DdC91F210bc1B
   address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0xd1CF2FBf4fb82045eE0B116eB107d29246E8DCe9;
+    0xa9a993275F308478f6C89438C23DdC91F210bc1B;
 
-  // https://sepolia.etherscan.io/address/0x098a890BAfDf6FB4ACD24bF107D20EA15D229C62
-  address internal constant EMISSION_MANAGER = 0x098a890BAfDf6FB4ACD24bF107D20EA15D229C62;
+  // https://sepolia.etherscan.io/address/0x57A6Ecfc60A0c5A7C4E9813EFF1a87F857009CAB
+  address internal constant EMISSION_MANAGER = 0x57A6Ecfc60A0c5A7C4E9813EFF1a87F857009CAB;
 
-  // https://sepolia.etherscan.io/address/0xC959483DBa39aa9E78757139af0e9a2EDEb3f42D
-  address internal constant FAUCET = 0xC959483DBa39aa9E78757139af0e9a2EDEb3f42D;
+  // https://sepolia.etherscan.io/address/0xB653EC2fd50562d87EC15e1bECfAbeC7e318A5f1
+  address internal constant FAUCET = 0xB653EC2fd50562d87EC15e1bECfAbeC7e318A5f1;
 
-  // https://sepolia.etherscan.io/address/0xBA25de9a7DC623B30799F33B770d31B44c2C3b77
-  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xBA25de9a7DC623B30799F33B770d31B44c2C3b77;
+  // https://sepolia.etherscan.io/address/0x81C01ac70B1ee2BC281B3E6f73358e31dC2c83f0
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x81C01ac70B1ee2BC281B3E6f73358e31dC2c83f0;
 
-  // https://sepolia.etherscan.io/address/0x69529987FA4A075D0C00B0128fa848dc9ebbE9CE
-  address internal constant UI_POOL_DATA_PROVIDER = 0x69529987FA4A075D0C00B0128fa848dc9ebbE9CE;
+  // https://sepolia.etherscan.io/address/0xc9d35a9bC294fC01D6c21119D18f36edf07B2981
+  address internal constant UI_POOL_DATA_PROVIDER = 0xc9d35a9bC294fC01D6c21119D18f36edf07B2981;
 
-  // https://sepolia.etherscan.io/address/0xCD4e0d6D2b1252E2A709B8aE97DBA31164C5a709
-  address internal constant WALLET_BALANCE_PROVIDER = 0xCD4e0d6D2b1252E2A709B8aE97DBA31164C5a709;
+  // https://sepolia.etherscan.io/address/0x43f6FCB86aa9D6222362aD78bBda238Af87881A0
+  address internal constant WALLET_BALANCE_PROVIDER = 0x43f6FCB86aa9D6222362aD78bBda238Af87881A0;
 
-  // https://sepolia.etherscan.io/address/0x387d311e47e80b498169e6fb51d3193167d89F7D
-  address internal constant WETH_GATEWAY = 0x387d311e47e80b498169e6fb51d3193167d89F7D;
-
-  // https://sepolia.etherscan.io/address/0xd210dFB43B694430B8d31762B5199e30c31266C8
-  address internal constant STATIC_A_TOKEN_FACTORY = 0xd210dFB43B694430B8d31762B5199e30c31266C8;
+  // https://sepolia.etherscan.io/address/0x5398fAad146b27639613879BeB90Db546c089037
+  address internal constant WETH_GATEWAY = 0x5398fAad146b27639613879BeB90Db546c089037;
 }
 
 library AaveV3SepoliaAssets {
-  // https://sepolia.etherscan.io/address/0xFF34B3d4Aee8ddCd6F9AFFFB6Fe49bD371b8a357
-  address internal constant DAI_UNDERLYING = 0xFF34B3d4Aee8ddCd6F9AFFFB6Fe49bD371b8a357;
+  // https://sepolia.etherscan.io/address/0x6c0115846bEb8d1CD6b51DB72C5deE425deAD285
+  address internal constant DAII_UNDERLYING = 0x6c0115846bEb8d1CD6b51DB72C5deE425deAD285;
 
-  uint8 internal constant DAI_DECIMALS = 18;
+  uint8 internal constant DAII_DECIMALS = 18;
 
-  // https://sepolia.etherscan.io/address/0x29598b72eb5CeBd806C5dCD549490FdA35B13cD8
-  address internal constant DAI_A_TOKEN = 0x29598b72eb5CeBd806C5dCD549490FdA35B13cD8;
+  // https://sepolia.etherscan.io/address/0x73Ac7D205330B877284ba5E0fb3171B7fba57bA7
+  address internal constant DAII_A_TOKEN = 0x73Ac7D205330B877284ba5E0fb3171B7fba57bA7;
 
-  // https://sepolia.etherscan.io/address/0x22675C506A8FC26447aFFfa33640f6af5d4D4cF0
-  address internal constant DAI_V_TOKEN = 0x22675C506A8FC26447aFFfa33640f6af5d4D4cF0;
+  // https://sepolia.etherscan.io/address/0xd4Db0ae5946B5962d12E2F54152283B1ac9131ec
+  address internal constant DAII_V_TOKEN = 0xd4Db0ae5946B5962d12E2F54152283B1ac9131ec;
 
-  // https://sepolia.etherscan.io/address/0xbEF786E742edB13361ff2f005b901A82c23AA491
-  address internal constant DAI_S_TOKEN = 0xbEF786E742edB13361ff2f005b901A82c23AA491;
+  // https://sepolia.etherscan.io/address/0x024D6307dEC6718d4Df9e8a2536e84e8858d5C59
+  address internal constant DAII_S_TOKEN = 0x024D6307dEC6718d4Df9e8a2536e84e8858d5C59;
 
-  // https://sepolia.etherscan.io/address/0x9aF11c35c5d3Ae182C0050438972aac4376f9516
-  address internal constant DAI_ORACLE = 0x9aF11c35c5d3Ae182C0050438972aac4376f9516;
+  // https://sepolia.etherscan.io/address/0x7911d586c32f66E2Fe0474df287D221A2f1C88A8
+  address internal constant DAII_ORACLE = 0x7911d586c32f66E2Fe0474df287D221A2f1C88A8;
 
-  // https://sepolia.etherscan.io/address/0xA813CC4d67821fbAcF24659e414A1Cf6c551373c
-  address internal constant DAI_INTEREST_RATE_STRATEGY = 0xA813CC4d67821fbAcF24659e414A1Cf6c551373c;
+  // https://sepolia.etherscan.io/address/0xdb11044CF27d2086c86771A0ebeA4dA129F637DF
+  address internal constant DAII_INTEREST_RATE_STRATEGY =
+    0xdb11044CF27d2086c86771A0ebeA4dA129F637DF;
 
-  // https://sepolia.etherscan.io/address/0xDE46e43F46ff74A23a65EBb0580cbe3dFE684a17
-  address internal constant DAI_STATA_TOKEN = 0xDE46e43F46ff74A23a65EBb0580cbe3dFE684a17;
-
-  // https://sepolia.etherscan.io/address/0xf8Fb3713D459D7C1018BD0A49D19b4C44290EBE5
-  address internal constant LINK_UNDERLYING = 0xf8Fb3713D459D7C1018BD0A49D19b4C44290EBE5;
-
-  uint8 internal constant LINK_DECIMALS = 18;
-
-  // https://sepolia.etherscan.io/address/0x3FfAf50D4F4E96eB78f2407c090b72e86eCaed24
-  address internal constant LINK_A_TOKEN = 0x3FfAf50D4F4E96eB78f2407c090b72e86eCaed24;
-
-  // https://sepolia.etherscan.io/address/0x34a4d932E722b9dFb492B9D8131127690CE2430B
-  address internal constant LINK_V_TOKEN = 0x34a4d932E722b9dFb492B9D8131127690CE2430B;
-
-  // https://sepolia.etherscan.io/address/0x8f7440aa789924626ab9f5687AF305da2ffB996b
-  address internal constant LINK_S_TOKEN = 0x8f7440aa789924626ab9f5687AF305da2ffB996b;
-
-  // https://sepolia.etherscan.io/address/0x14fC51b7df22b4D393cD45504B9f0A3002A63F3F
-  address internal constant LINK_ORACLE = 0x14fC51b7df22b4D393cD45504B9f0A3002A63F3F;
-
-  // https://sepolia.etherscan.io/address/0xCA30c502d52F905FB3D04eE60cA48F5A1A89f8dB
-  address internal constant LINK_INTEREST_RATE_STRATEGY =
-    0xCA30c502d52F905FB3D04eE60cA48F5A1A89f8dB;
-
-  // https://sepolia.etherscan.io/address/0x8227a989709a757f25dF251C3C3e71CA38627836
-  address internal constant LINK_STATA_TOKEN = 0x8227a989709a757f25dF251C3C3e71CA38627836;
-
-  // https://sepolia.etherscan.io/address/0x94a9D9AC8a22534E3FaCa9F4e7F2E2cf85d5E4C8
-  address internal constant USDC_UNDERLYING = 0x94a9D9AC8a22534E3FaCa9F4e7F2E2cf85d5E4C8;
-
-  uint8 internal constant USDC_DECIMALS = 6;
-
-  // https://sepolia.etherscan.io/address/0x16dA4541aD1807f4443d92D26044C1147406EB80
-  address internal constant USDC_A_TOKEN = 0x16dA4541aD1807f4443d92D26044C1147406EB80;
-
-  // https://sepolia.etherscan.io/address/0x36B5dE936eF1710E1d22EabE5231b28581a92ECc
-  address internal constant USDC_V_TOKEN = 0x36B5dE936eF1710E1d22EabE5231b28581a92ECc;
-
-  // https://sepolia.etherscan.io/address/0x42A218F7bd03c63c4835496506492A383EfcF726
-  address internal constant USDC_S_TOKEN = 0x42A218F7bd03c63c4835496506492A383EfcF726;
-
-  // https://sepolia.etherscan.io/address/0x98458D6A99489F15e6eB5aFa67ACFAcf6F211051
-  address internal constant USDC_ORACLE = 0x98458D6A99489F15e6eB5aFa67ACFAcf6F211051;
-
-  // https://sepolia.etherscan.io/address/0x5CB1008969a2d5FAcE8eF32732e6A306d0D0EF2A
-  address internal constant USDC_INTEREST_RATE_STRATEGY =
-    0x5CB1008969a2d5FAcE8eF32732e6A306d0D0EF2A;
-
-  // https://sepolia.etherscan.io/address/0x8A88124522dbBF1E56352ba3DE1d9F78C143751e
-  address internal constant USDC_STATA_TOKEN = 0x8A88124522dbBF1E56352ba3DE1d9F78C143751e;
-
-  // https://sepolia.etherscan.io/address/0x29f2D40B0605204364af54EC677bD022dA425d03
-  address internal constant WBTC_UNDERLYING = 0x29f2D40B0605204364af54EC677bD022dA425d03;
-
-  uint8 internal constant WBTC_DECIMALS = 8;
-
-  // https://sepolia.etherscan.io/address/0x1804Bf30507dc2EB3bDEbbbdd859991EAeF6EefF
-  address internal constant WBTC_A_TOKEN = 0x1804Bf30507dc2EB3bDEbbbdd859991EAeF6EefF;
-
-  // https://sepolia.etherscan.io/address/0xEB016dFd303F19fbDdFb6300eB4AeB2DA7Ceac37
-  address internal constant WBTC_V_TOKEN = 0xEB016dFd303F19fbDdFb6300eB4AeB2DA7Ceac37;
-
-  // https://sepolia.etherscan.io/address/0xc7AEA6Cf353b4FA27aBf1b4A8D536A4e87383EB5
-  address internal constant WBTC_S_TOKEN = 0xc7AEA6Cf353b4FA27aBf1b4A8D536A4e87383EB5;
-
-  // https://sepolia.etherscan.io/address/0x784B90bA1E9a8cf3C9939c2e072F058B024C4b8a
-  address internal constant WBTC_ORACLE = 0x784B90bA1E9a8cf3C9939c2e072F058B024C4b8a;
-
-  // https://sepolia.etherscan.io/address/0xCA30c502d52F905FB3D04eE60cA48F5A1A89f8dB
-  address internal constant WBTC_INTEREST_RATE_STRATEGY =
-    0xCA30c502d52F905FB3D04eE60cA48F5A1A89f8dB;
-
-  // https://sepolia.etherscan.io/address/0x131a121bda71ED810bCAf2aC9079214925e59C18
-  address internal constant WBTC_STATA_TOKEN = 0x131a121bda71ED810bCAf2aC9079214925e59C18;
-
-  // https://sepolia.etherscan.io/address/0xC558DBdd856501FCd9aaF1E62eae57A9F0629a3c
-  address internal constant WETH_UNDERLYING = 0xC558DBdd856501FCd9aaF1E62eae57A9F0629a3c;
-
-  uint8 internal constant WETH_DECIMALS = 18;
-
-  // https://sepolia.etherscan.io/address/0x5b071b590a59395fE4025A0Ccc1FcC931AAc1830
-  address internal constant WETH_A_TOKEN = 0x5b071b590a59395fE4025A0Ccc1FcC931AAc1830;
-
-  // https://sepolia.etherscan.io/address/0x22a35DB253f4F6D0029025D6312A3BdAb20C2c6A
-  address internal constant WETH_V_TOKEN = 0x22a35DB253f4F6D0029025D6312A3BdAb20C2c6A;
-
-  // https://sepolia.etherscan.io/address/0xEb45D5A0efF06fFb88f6A70811c08375A8de84A3
-  address internal constant WETH_S_TOKEN = 0xEb45D5A0efF06fFb88f6A70811c08375A8de84A3;
-
-  // https://sepolia.etherscan.io/address/0xDde0E8E6d3653614878Bf5009EDC317BC129fE2F
-  address internal constant WETH_ORACLE = 0xDde0E8E6d3653614878Bf5009EDC317BC129fE2F;
-
-  // https://sepolia.etherscan.io/address/0xCA30c502d52F905FB3D04eE60cA48F5A1A89f8dB
-  address internal constant WETH_INTEREST_RATE_STRATEGY =
-    0xCA30c502d52F905FB3D04eE60cA48F5A1A89f8dB;
-
-  // https://sepolia.etherscan.io/address/0x162B500569F42D9eCe937e6a61EDfef660A12E98
-  address internal constant WETH_STATA_TOKEN = 0x162B500569F42D9eCe937e6a61EDfef660A12E98;
-
-  // https://sepolia.etherscan.io/address/0xaA8E23Fb1079EA71e0a56F48a2aA51851D8433D0
-  address internal constant USDT_UNDERLYING = 0xaA8E23Fb1079EA71e0a56F48a2aA51851D8433D0;
+  // https://sepolia.etherscan.io/address/0x76127399A0CafeDB59615A93A7ACF8552c1aEE4c
+  address internal constant USDT_UNDERLYING = 0x76127399A0CafeDB59615A93A7ACF8552c1aEE4c;
 
   uint8 internal constant USDT_DECIMALS = 6;
 
-  // https://sepolia.etherscan.io/address/0xAF0F6e8b0Dc5c913bbF4d14c22B4E78Dd14310B6
-  address internal constant USDT_A_TOKEN = 0xAF0F6e8b0Dc5c913bbF4d14c22B4E78Dd14310B6;
+  // https://sepolia.etherscan.io/address/0x7BB8b6Bf92a05a2FC16FaD5Ac467628C0F1F6D17
+  address internal constant USDT_A_TOKEN = 0x7BB8b6Bf92a05a2FC16FaD5Ac467628C0F1F6D17;
 
-  // https://sepolia.etherscan.io/address/0x9844386d29EEd970B9F6a2B9a676083b0478210e
-  address internal constant USDT_V_TOKEN = 0x9844386d29EEd970B9F6a2B9a676083b0478210e;
+  // https://sepolia.etherscan.io/address/0xEb285ff1bA91e2B7289710C34Aa4c13Da834d653
+  address internal constant USDT_V_TOKEN = 0xEb285ff1bA91e2B7289710C34Aa4c13Da834d653;
 
-  // https://sepolia.etherscan.io/address/0xEAF54fA3b1C7243033C2893c6B807f9cEaBCf0AF
-  address internal constant USDT_S_TOKEN = 0xEAF54fA3b1C7243033C2893c6B807f9cEaBCf0AF;
+  // https://sepolia.etherscan.io/address/0xEdf140e5cc85C6a27914c94020199628780b7F8b
+  address internal constant USDT_S_TOKEN = 0xEdf140e5cc85C6a27914c94020199628780b7F8b;
 
-  // https://sepolia.etherscan.io/address/0x4e86D3Aa271Fa418F38D7262fdBa2989C94aa5Ba
-  address internal constant USDT_ORACLE = 0x4e86D3Aa271Fa418F38D7262fdBa2989C94aa5Ba;
+  // https://sepolia.etherscan.io/address/0x14866185B1962B63C3Ea9E03Bc1da838bab34C19
+  address internal constant USDT_ORACLE = 0x14866185B1962B63C3Ea9E03Bc1da838bab34C19;
 
-  // https://sepolia.etherscan.io/address/0x5CB1008969a2d5FAcE8eF32732e6A306d0D0EF2A
+  // https://sepolia.etherscan.io/address/0x7031c5B8bCdfD9a09D30c79a28243200Fe1D12a5
   address internal constant USDT_INTEREST_RATE_STRATEGY =
-    0x5CB1008969a2d5FAcE8eF32732e6A306d0D0EF2A;
+    0x7031c5B8bCdfD9a09D30c79a28243200Fe1D12a5;
 
-  // https://sepolia.etherscan.io/address/0x978206fAe13faF5a8d293FB614326B237684B750
-  address internal constant USDT_STATA_TOKEN = 0x978206fAe13faF5a8d293FB614326B237684B750;
+  // https://sepolia.etherscan.io/address/0xE55a23aaFb3a712BFae5BE96E0f61C745dedf33C
+  address internal constant WETH_UNDERLYING = 0xE55a23aaFb3a712BFae5BE96E0f61C745dedf33C;
 
-  // https://sepolia.etherscan.io/address/0x88541670E55cC00bEEFD87eB59EDd1b7C511AC9a
-  address internal constant AAVE_UNDERLYING = 0x88541670E55cC00bEEFD87eB59EDd1b7C511AC9a;
+  uint8 internal constant WETH_DECIMALS = 18;
 
-  uint8 internal constant AAVE_DECIMALS = 18;
+  // https://sepolia.etherscan.io/address/0x55a53F2A9C7f9BC1ab01366e2802a1765C57Be13
+  address internal constant WETH_A_TOKEN = 0x55a53F2A9C7f9BC1ab01366e2802a1765C57Be13;
 
-  // https://sepolia.etherscan.io/address/0x6b8558764d3b7572136F17174Cb9aB1DDc7E1259
-  address internal constant AAVE_A_TOKEN = 0x6b8558764d3b7572136F17174Cb9aB1DDc7E1259;
+  // https://sepolia.etherscan.io/address/0x44152e2a33AA0ed975f350e8b878fA084420EE69
+  address internal constant WETH_V_TOKEN = 0x44152e2a33AA0ed975f350e8b878fA084420EE69;
 
-  // https://sepolia.etherscan.io/address/0xf12fdFc4c631F6D361b48723c2F2800b84B519e6
-  address internal constant AAVE_V_TOKEN = 0xf12fdFc4c631F6D361b48723c2F2800b84B519e6;
+  // https://sepolia.etherscan.io/address/0xc31dB5a33B423ECA6dE4bb4Eb137D899fE68171e
+  address internal constant WETH_S_TOKEN = 0xc31dB5a33B423ECA6dE4bb4Eb137D899fE68171e;
 
-  // https://sepolia.etherscan.io/address/0x4F15CaD6ebAE920a773bF00C6E941cccCB704915
-  address internal constant AAVE_S_TOKEN = 0x4F15CaD6ebAE920a773bF00C6E941cccCB704915;
+  // https://sepolia.etherscan.io/address/0x694AA1769357215DE4FAC081bf1f309aDC325306
+  address internal constant WETH_ORACLE = 0x694AA1769357215DE4FAC081bf1f309aDC325306;
 
-  // https://sepolia.etherscan.io/address/0xda678Ef100c13504edDb8a228A1e8e4CB139f189
-  address internal constant AAVE_ORACLE = 0xda678Ef100c13504edDb8a228A1e8e4CB139f189;
+  // https://sepolia.etherscan.io/address/0xcEd4C9E6D3730F4316884d956b16F30C49e4451f
+  address internal constant WETH_INTEREST_RATE_STRATEGY =
+    0xcEd4C9E6D3730F4316884d956b16F30C49e4451f;
 
-  // https://sepolia.etherscan.io/address/0xCA30c502d52F905FB3D04eE60cA48F5A1A89f8dB
-  address internal constant AAVE_INTEREST_RATE_STRATEGY =
-    0xCA30c502d52F905FB3D04eE60cA48F5A1A89f8dB;
+  // https://sepolia.etherscan.io/address/0xAF48F7c5866c0Fd63492bAc0b7816c1933c4D43a
+  address internal constant WBTC_UNDERLYING = 0xAF48F7c5866c0Fd63492bAc0b7816c1933c4D43a;
 
-  // https://sepolia.etherscan.io/address/0x56771cEF0cb422e125564CcCC98BB05fdc718E77
-  address internal constant AAVE_STATA_TOKEN = 0x56771cEF0cb422e125564CcCC98BB05fdc718E77;
+  uint8 internal constant WBTC_DECIMALS = 8;
 
-  // https://sepolia.etherscan.io/address/0x6d906e526a4e2Ca02097BA9d0caA3c382F52278E
-  address internal constant EURS_UNDERLYING = 0x6d906e526a4e2Ca02097BA9d0caA3c382F52278E;
+  // https://sepolia.etherscan.io/address/0xdb808735103603BbeBe3aaafAcf9AC898F9e5712
+  address internal constant WBTC_A_TOKEN = 0xdb808735103603BbeBe3aaafAcf9AC898F9e5712;
 
-  uint8 internal constant EURS_DECIMALS = 2;
+  // https://sepolia.etherscan.io/address/0x9567b6332745C32255B61c965B1EC42fc345C392
+  address internal constant WBTC_V_TOKEN = 0x9567b6332745C32255B61c965B1EC42fc345C392;
 
-  // https://sepolia.etherscan.io/address/0xB20691021F9AcED8631eDaa3c0Cd2949EB45662D
-  address internal constant EURS_A_TOKEN = 0xB20691021F9AcED8631eDaa3c0Cd2949EB45662D;
+  // https://sepolia.etherscan.io/address/0x88011A742CFb4eCC4E51d4835E7EBfeF67f82848
+  address internal constant WBTC_S_TOKEN = 0x88011A742CFb4eCC4E51d4835E7EBfeF67f82848;
 
-  // https://sepolia.etherscan.io/address/0x94482C7A7477196259D8a0f74fB853277Fa5a75b
-  address internal constant EURS_V_TOKEN = 0x94482C7A7477196259D8a0f74fB853277Fa5a75b;
+  // https://sepolia.etherscan.io/address/0x1b44F3514812d835EB1BDB0acB33d3fA3351Ee43
+  address internal constant WBTC_ORACLE = 0x1b44F3514812d835EB1BDB0acB33d3fA3351Ee43;
 
-  // https://sepolia.etherscan.io/address/0x08878209484D8178DD1FFA50AB1689F21aDBB856
-  address internal constant EURS_S_TOKEN = 0x08878209484D8178DD1FFA50AB1689F21aDBB856;
-
-  // https://sepolia.etherscan.io/address/0xCbE15C1f40f1D7eE1De3756D1557d5Fdc2A50bBD
-  address internal constant EURS_ORACLE = 0xCbE15C1f40f1D7eE1De3756D1557d5Fdc2A50bBD;
-
-  // https://sepolia.etherscan.io/address/0x5CB1008969a2d5FAcE8eF32732e6A306d0D0EF2A
-  address internal constant EURS_INTEREST_RATE_STRATEGY =
-    0x5CB1008969a2d5FAcE8eF32732e6A306d0D0EF2A;
-
-  // https://sepolia.etherscan.io/address/0x72B49a461900e11632C95dfa563e7173438D4e3E
-  address internal constant EURS_STATA_TOKEN = 0x72B49a461900e11632C95dfa563e7173438D4e3E;
+  // https://sepolia.etherscan.io/address/0xDc34b169283ba59041e4Bcb93a1a4E8E85E48Cb8
+  address internal constant WBTC_INTEREST_RATE_STRATEGY =
+    0xDc34b169283ba59041e4Bcb93a1a4E8E85E48Cb8;
 }
 
 library AaveV3SepoliaEModes {
   uint8 internal constant NONE = 0;
-
-  uint8 internal constant STABLECOINS = 1;
 }
