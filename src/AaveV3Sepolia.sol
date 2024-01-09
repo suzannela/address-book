@@ -149,8 +149,8 @@ library AaveV3SepoliaAssets {
   // https://sepolia.etherscan.io/address/0x88011A742CFb4eCC4E51d4835E7EBfeF67f82848
   address internal constant WBTC_S_TOKEN = 0x88011A742CFb4eCC4E51d4835E7EBfeF67f82848;
 
-  // https://sepolia.etherscan.io/address/0x1b44F3514812d835EB1BDB0acB33d3fA3351Ee43
-  address internal constant WBTC_ORACLE = 0x1b44F3514812d835EB1BDB0acB33d3fA3351Ee43;
+  // https://sepolia.etherscan.io/address/0x0000000000000000000000000000000000000000
+  address internal constant WBTC_ORACLE = 0x0000000000000000000000000000000000000000;
 
   // https://sepolia.etherscan.io/address/0xDc34b169283ba59041e4Bcb93a1a4E8E85E48Cb8
   address internal constant WBTC_INTEREST_RATE_STRATEGY =
